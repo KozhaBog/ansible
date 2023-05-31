@@ -1,0 +1,8 @@
+---
+- hosts: test
+  gather_facts: yes
+  tasks:
+  - name: edit motd file
+    template:
+     src: /var/ansible
+     dest: /etc/motd

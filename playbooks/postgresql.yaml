@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+   - name: install    
+     apt: 
+      name: mysql-common 
+      update_cache: yes
